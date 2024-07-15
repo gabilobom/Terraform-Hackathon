@@ -33,7 +33,7 @@ resource "local_file" "private_key" {
 resource "aws_instance" "it_talent_instance" {
 
   ami           = "ami-000aa26b054f3a383"
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
   key_name = aws_key_pair.key_pair.key_name
 
   tags = {
