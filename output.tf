@@ -8,5 +8,5 @@ output "instance_arn"{
 
 output "instance_public_ip"{
     description = "O endereço de Ip público da instância"
-    value = "aws_instance.example.public_ip"
+    value = "aws_instance.app_server.public_ip"
 }
